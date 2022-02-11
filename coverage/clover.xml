@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1644394645813" clover="3.2.0">
-  <project timestamp="1644394645813" name="All files">
-    <metrics statements="94" coveredstatements="90" conditionals="76" coveredconditionals="70" methods="27" coveredmethods="27" elements="197" coveredelements="187" complexity="0" loc="94" ncloc="94" packages="6" files="7" classes="7"/>
+<coverage generated="1644563848478" clover="3.2.0">
+  <project timestamp="1644563848478" name="All files">
+    <metrics statements="109" coveredstatements="105" conditionals="88" coveredconditionals="82" methods="29" coveredmethods="29" elements="226" coveredelements="216" complexity="0" loc="109" ncloc="109" packages="7" files="8" classes="8"/>
     <package name="javascript-fundamental">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="main.js" path="/Users/anh.nt/Desktop/Code/javascript/Study/javascript-fundamental/main.js">
@@ -21,6 +21,27 @@
         <line num="22" count="7" type="cond" truecount="2" falsecount="0"/>
         <line num="23" count="5" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="javascript-fundamental.practice.01-number">
+      <metrics statements="15" coveredstatements="15" conditionals="12" coveredconditionals="12" methods="2" coveredmethods="2"/>
+      <file name="index.js" path="/Users/anh.nt/Desktop/Code/javascript/Study/javascript-fundamental/practice/01-number/index.js">
+        <metrics statements="15" coveredstatements="15" conditionals="12" coveredconditionals="12" methods="2" coveredmethods="2"/>
+        <line num="8" count="22" type="cond" truecount="4" falsecount="0"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="11" count="10" type="stmt"/>
+        <line num="12" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="17" count="23" type="cond" truecount="4" falsecount="0"/>
+        <line num="19" count="11" type="stmt"/>
+        <line num="20" count="11" type="stmt"/>
+        <line num="22" count="11" type="stmt"/>
+        <line num="23" count="34" type="stmt"/>
+        <line num="24" count="34" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="28" type="stmt"/>
+        <line num="28" count="28" type="stmt"/>
+        <line num="31" count="5" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
       </file>
     </package>
     <package name="javascript-fundamental.practice.02-cal-S">

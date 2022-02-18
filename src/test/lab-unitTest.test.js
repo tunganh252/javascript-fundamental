@@ -1,4 +1,4 @@
-import { classifyStudentV3 } from "../lab-unitTest";
+import { classifyStudentV3 } from "./lab-unitTest";
 
 describe("classifyStudentV3()", () => {
   test("should return invalid mark when pass invalid number", () => {

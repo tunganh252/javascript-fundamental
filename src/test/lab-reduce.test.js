@@ -1,4 +1,4 @@
-import { total, stringConcat } from "../lab-reduce";
+import { total, stringConcat } from "./lab-reduce";
 
 describe("Cal sum", () => {
   test("should use func total with param is Array<number> ---> sum all number in array", () => {

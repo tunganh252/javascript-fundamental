@@ -105,3 +105,31 @@ describe("removeAtPosition()", () => {
     });
   });
 });
+
+describe("some()", () => {
+  test("should return false if parameters invalid", () => {
+    const constNumberLinkedList = createLinkedList();
+    constNumberLinkedList.insertHead(1);
+    const head = constNumberLinkedList.some();
+    expect(head).toBe(false);
+  });
+
+  test("should return false if all item invalid condition", () => {
+    const constNumberLinkedList = createLinkedList();
+    constNumberLinkedList.insertHead(1);
+    constNumberLinkedList.insertHead(3);
+    constNumberLinkedList.insertHead(5);
+    const head = constNumberLinkedList.some((item) => item % 2 === 0);
+    expect(head).toBe(false);
+  });
+
+  test("should return true if just one / some item valid condition", () => {
+    const constNumberLinkedList = createLinkedList();
+    constNumberLinkedList.insertHead(1);
+    constNumberLinkedList.insertHead(2);
+    constNumberLinkedList.insertHead(3);
+    constNumberLinkedList.insertHead(4);
+    const head = constNumberLinkedList.some((item) => item % 2 === 1);
+    expect(head).toBe(true);
+  });
+});

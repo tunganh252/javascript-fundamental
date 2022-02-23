@@ -1,4 +1,4 @@
-function createLinkedList() {
+export function createLinkedList() {
   let head = null;
 
   // Complete logic - not write unit test
@@ -194,6 +194,32 @@ function createLinkedList() {
     return head;
   }
 
+  // Complete logic + unit test
+  function some(isValidFn) {
+    if (typeof isValidFn !== "function") return false;
+    if (head == null) return false;
+
+    let curr = head;
+    while (curr != null) {
+      if (isValidFn(curr.data)) return true;
+      curr = curr.next;
+    }
+    return false;
+  }
+
+  // Complete logic + unit test
+  function every(isValidFn) {
+    if (typeof isValidFn !== "function") return false;
+    if (head == null) return false;
+
+    let curr = head;
+    while (curr != null) {
+      if (!isValidFn(curr.data)) return false;
+      curr = curr.next;
+    }
+    return true;
+  }
+
   // Complete logic
   function printList() {
     if (head == null) return;
@@ -217,6 +243,8 @@ function createLinkedList() {
     removeHead,
     removeTail,
     removeAtPosition,
+    some,
+    every,
     printList,
   };
 }
@@ -231,5 +259,7 @@ numberLinkedList.insertTail(5);
 numberLinkedList.insertTail(6);
 numberLinkedList.insertTail(7);
 numberLinkedList.insertTail(8);
+console.log(numberLinkedList.some((x) => x > 7));
+console.log(numberLinkedList.every((x) => x <= 8));
 
 numberLinkedList.printList();

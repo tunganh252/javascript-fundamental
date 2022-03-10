@@ -144,7 +144,6 @@ function createBinarySearchTree(initKeyList) {
 
     // two child
     const minNode = findMin(node.right);
-    console.log(11111, minNode);
     node.key = minNode.key;
     node.right = remove(node.right, minNode.key);
 
@@ -167,12 +166,12 @@ function createBinarySearchTree(initKeyList) {
 }
 
 const binarySearchTree = createBinarySearchTree([
-  10, 6, 3, 9, 2, 12, 11, 15, 13, 18,
+  10, 6, 3, 9, 2, 12, 11, 15, 13, 18, 16,
 ]);
 // console.log(binarySearchTree.root);
 // console.log(binarySearchTree.findMin(binarySearchTree.root, 6));
 // console.log(binarySearchTree.search(binarySearchTree.root, 15));
-// console.log(binarySearchTree.getHeight(binarySearchTree.root, 15));
+console.log(binarySearchTree.getHeight());
 // console.log(binarySearchTree.bfs());
 // console.log(binarySearchTree.printInOrder(binarySearchTree.root));
 // console.log(binarySearchTree.printPreOrder(binarySearchTree.root));

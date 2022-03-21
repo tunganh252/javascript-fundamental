@@ -12,7 +12,7 @@
 
 ![javascript engine](./javascript_engine.png)
 
-2. ### **Javascript Engine**
+2. ### **Event Loop**
 
 ![eventLoop_browser](./eventLoop_browser.png)
 source: https://scoutapm.com/blog/async-javascript

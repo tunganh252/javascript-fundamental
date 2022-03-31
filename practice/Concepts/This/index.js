@@ -8,6 +8,7 @@ function sayHello() {
 
   const getLanguage = () => {
     console.log(222222, this);
+    console.log(333333, this.name);
   };
   getLanguage();
 }
@@ -21,6 +22,7 @@ const student = {
     console.log("My name is", this.name); //
   },
   sayGoodbye() {
+    console.log("....", this);
     console.log("Goodbye", this.name);
   },
 };

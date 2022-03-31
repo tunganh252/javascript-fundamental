@@ -32,7 +32,15 @@ function createLiElementTodo(data) {
   completeButton.textContent =
     todoElement.dataset.status === "Complete" ? "Reset" : "Complete";
 
-  completeButton.addEventListener("click", () => {
+  itemElement.addEventListener("click", (event) => {
+    event.stopImmediatePropagation(); // sẽ ko gọi vào các event của DOM cha lẫn DOM con
+    console.log("item Click");
+  });
+
+  completeButton.addEventListener("click", (event) => {
+    event.stopPropagation(); // sẽ ko gọi vào các event của DOM cha NHƯNG vẫn sẽ gọi vào các event của DOM con
+    console.log("button Click");
+
     if (itemElement) {
       const currentStatus = todoElement.dataset.status;
 

@@ -23,7 +23,7 @@
   - ### **_Global scope_**:
 
     - Biến không nằm trong bất kỳ hàm nào cả
-    - Biến có thể được truy cập được ở khắp nơi: **_globalThis_** thay thế cho Browser (window), Nodejs (global), Woker (WorkerGlobalScope/Self) ---> sử dụng chung là
+    - Biến có thể được truy cập được ở khắp nơi: **_globalThis_** thay thế cho Browser (window), Nodejs (global), Woker (WorkerGlobalScope/Self)
 
   - ### **_Scope chain_**:
 
@@ -31,5 +31,4 @@
 
     - Trong hình trên biến fullName ko có trong hàm writeName() ---> nó sẽ lên trên hảm sayName() để tìm và trả về "Booooom" (nếu như hàm sayName() ko có biến fullName thì nó sẽ lên tiếp tục lên trên hàm profile() để tìm...)
 
-> **Case Check**
-> ![This is an image](./case1.png)
+> **Case Check** > ![This is an image](./case1.png)

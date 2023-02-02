@@ -1,0 +1,50 @@
+#todoList {
+    list-style-type: none;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin: 0.5rem 0;
+
+}
+
+.todo .title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+
+.todo__alert--success {
+    background-color: rgba(134, 248, 99, 0.479);
+}
+
+.todo__alert--pending {
+    background-color: rgb(170, 121, 56);
+
+}
+
+.block__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border-radius: 0.5rem;
+    border: unset;
+    cursor: pointer;
+}
+
+.btn--complete {
+    background-color: green;
+}
+
+.btn--remove {
+    background-color: red;
+}
